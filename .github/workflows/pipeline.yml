@@ -33,3 +33,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "pokedexe" #Must be unique in Heroku
           heroku_email: "2019005@iiitdmj.ac.in"
+          healthcheck: "https://[YOUR APP's NAME].herokuapp.com/health"
+          checkstring: "ok"
+          rollbackonhealthcheckfailed: true
