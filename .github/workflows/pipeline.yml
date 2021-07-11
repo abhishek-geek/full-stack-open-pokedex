@@ -35,4 +35,4 @@ jobs:
           heroku_email: "2019005@iiitdmj.ac.in"
           healthcheck: "https://[YOUR APP's NAME].herokuapp.com/health"
           checkstring: "ok"
-          rollbackonhealthcheckfailed: true
+          rollbackonhealthcheckfailed: false
