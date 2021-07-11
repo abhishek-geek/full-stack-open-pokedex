@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const express = require('express')
 const app = express()
 
@@ -8,6 +9,7 @@ const PORT = process.env.PORT || 5000
 app.use(express.static('dist'))
 
 app.get('/health', (req, res) => {
+  console.log('pinged...')
   res.send('ok')
 })
 
